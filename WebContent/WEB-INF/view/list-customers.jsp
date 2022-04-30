@@ -9,7 +9,7 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title>WCT: LIST CUSTOMERS</title>
-	<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css"/>
+	<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css?version=10"/>
 </head>
 <body>
 	<div id="wrapper">
@@ -46,9 +46,9 @@
 			
 			<table>
 				<tr>
-					<th><a href="${sortLinkFirstName}">First name</a></th>
-					<th><a href="${sortLinkLastName}">Last name</a></th>
-					<th><a href="${sortLinkEmail}">Email</a></th>
+					<th><a class="whiteColor" href="${sortLinkFirstName}">First name</a></th>
+					<th><a class="whiteColor" href="${sortLinkLastName}">Last name</a></th>
+					<th><a class="whiteColor" href="${sortLinkEmail}">Email</a></th>
 					<th>Actions</th>		
 				</tr>
 				<c:forEach var="customer" items="${customers}" >
